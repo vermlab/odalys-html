@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TP: Initiation HTML Odalys</title>
-</head>
-
-<body>
-
-  <!-- Placez votre code ici -->
-  <!-- Bon courage :-) -->
-
-</body>
-
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu du Pendu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flag"></div>
+    <div class="container">
+      <h1>Pendez-vous 🦍</h1>
+      <section>
+        <p>Règles du jeu :</p>
+        <ul>
+          <li>Avoir un tabouret</li>
+          <li>Avoir une chaise</li>
+          <li>Avoir un pote de confiance pour pousser la chaise</li>
+        </ul>
+      </section>
+      <section>
+        <p>Le mot à deviner est : <span id="word">XXX</span></p>
+        <p>Il vous reste <span id="tries">12</span> essais</p>
+        <p>Proposez une lettre :</p>
+        <input type="text" id="letter" maxlength="1" />
+        <button id="play">Jouer</button>
+      </section>
+    </div>
+    <script src="./game.js"></script>
+  </body>
 </html>
